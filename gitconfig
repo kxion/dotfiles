@@ -20,7 +20,6 @@
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [core]
   excludesfile = ~/.gitignore
-  autocrlf = input
 [merge]
   ff = only
 [include]
@@ -30,9 +29,9 @@
 [fetch]
   prune = true
 [user]
-  name  = zgs225
-  email = zgs225@gmail.com
+  name  = kxion
+  email = mzrpld@gmail.com
 [credential]
 	helper = osxkeychain
 [github]
-  user = zgs225
+  user = kxion

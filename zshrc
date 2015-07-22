@@ -73,7 +73,15 @@ export PATH="$HOME/.bin:$PATH"
 export PATH=".git/safe/../../bin:$PATH"
 
 # aliases
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile 
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
