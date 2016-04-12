@@ -19,7 +19,7 @@
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/kxion/.gitignore
 [merge]
   ff = only
 [include]
@@ -29,9 +29,15 @@
 [fetch]
   prune = true
 [user]
-  name  = kxion
+  name  = kx
   email = mzrpld@gmail.com
 [credential]
 	helper = osxkeychain
 [github]
   user = kxion
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
